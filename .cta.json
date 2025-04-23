@@ -10,10 +10,6 @@
   "git": true,
   "version": 1,
   "existingAddOns": [
-    "clerk",
-    "shadcn",
-    "tanstack-query",
-    "tRPC",
-    "start"
+    "shadcn"
   ]
 }
