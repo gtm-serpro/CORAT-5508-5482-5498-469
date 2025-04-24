@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import './rawline';
 
 @plugin "tailwindcss-animate";
 
@@ -7,7 +8,7 @@
 body {
   @apply m-0;
   font-family:
-    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Rawline',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,7 +26,7 @@ code {
   --card-foreground: oklch(0.141 0.005 285.823);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.141 0.005 285.823);
-  --primary: oklch(0.21 0.006 285.885);
+  --primary: oklch(0.46 0.169 260.08);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.967 0.001 286.375);
   --secondary-foreground: oklch(0.21 0.006 285.885);
@@ -135,4 +136,72 @@ code {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@theme {
+  /* Primary */
+  --color-primary-darken-2: #071D41;
+  --color-primary-darken-1: #0C326F;
+  --color-primary: #1351B4;
+  --color-primary-lighten-1: #155BCB;
+  --color-primary-lighten-2: #2670E8;
+  --color-primary-lighten-3: #5992ED;
+  --color-primary-lighten-4: #81AEFC;
+  --color-primary-lighten-5: #ADCDFF;
+
+  /* Success */
+  --color-success-darken-4: #0E4B23;
+  --color-success-darken-3: #168821;
+  --color-success-darken-2: #168821;
+  --color-success-darken-1: #168821;
+  --color-success: #168821;
+  --color-success-lighten-1: #3EA969;
+  --color-success-lighten-2: #36B37E;
+  --color-success-lighten-3: #B8FFDA;
+  --color-success-lighten-4: #D7FAE3;
+  --color-success-lighten-5: #E8FFF0;
+
+  /* Warning */
+  --color-warning-darken-4: #5C4500;
+  --color-warning-darken-3: #826100;
+  --color-warning-darken-2: #FABD0E;
+  --color-warning-darken-1: #FABD0E;
+  --color-warning: #FFCD07;
+  --color-warning-lighten-1: #FFCD07;
+  --color-warning-lighten-2: #FEE685;
+  --color-warning-lighten-3: #FFF5C2;
+  --color-warning-lighten-4: #FFFCE6;
+  --color-warning-lighten-5: #FFFCE6;
+
+  /* Danger */
+  --color-danger-darken-4: #5C0000;
+  --color-danger-darken-3: #5C0000;
+  --color-danger-darken-2: #B12219;
+  --color-danger-darken-1: #D92121;
+  --color-danger: #E52E2E;
+  --color-danger-lighten-1: #FF5252;
+  --color-danger-lighten-2: #FF8080;
+  --color-danger-lighten-3: #FFCDCD;
+  --color-danger-lighten-4: #FFEFEF;
+  --color-danger-lighten-5: #FFF8F8;
+
+  /* Gray */
+  --color-gray-darken-4: #1D1D1D;
+  --color-gray-darken-3: #333333;
+  --color-gray-darken-2: #555555;
+  --color-gray-darken-1: #777777;
+  --color-gray: #888888;
+  --color-gray-lighten-1: #AAAAAA;
+  --color-gray-lighten-2: #CCCCCC;
+  --color-gray-lighten-3: #DDDDDD;
+  --color-gray-lighten-4: #EEEEEE;
+  --color-gray-lighten-5: #F8F8F8;
+
+  /* Pure and Semantic */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-info: #2670E8;
+  --color-focus: #EA9C00;
+  --color-visited: #6E3DC8;
+  --color-transparent: transparent;
 }
